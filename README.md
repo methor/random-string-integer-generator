@@ -19,4 +19,4 @@ Like the first one, generate random integers using the Floyd algorithm.(Note: th
 Randomly select non-repetitive integers from 1 to `Integer.MAX_VALUE`.
 
 #### ```public static List<Integer> generateUniqueIntegers(int num, int maxLen, int minLen)```
-Randomly select integers with digit length from `minLen` to `maxLen`.
+Randomly select integers with digit length from `minLen` to `maxLen`(also excludes 0, as previous).
