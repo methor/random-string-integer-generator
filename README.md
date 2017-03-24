@@ -5,7 +5,7 @@
 Generate random unique strings using the Floyd algorithm(trial-and-error free).
 
 #### ```public List<String> generateUniqueStrings(int num, int maxLen, int minLen, String regex)``` 
-The last argument `regex` chooses characters to consititute random strings from a set of characters, which defaults to `"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=,./<>?;':"~"`. You can override this set by passing your string to one of the constructors though normally it's unnecessary.
+The last argument `regex` chooses characters to consititute random strings from a set of characters, which defaults to `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-=,./<>?;':"~`. You can override this set by passing your string to one of the constructors though normally it's unnecessary. For example, to choose all alphabets and numbers, `regex` can be `[a-zA-Z0-9]` or `[a-zA-Z0-9]+`.(be cautious not using `[a-zA-Z0-9]*`, because it can match no character thus causing infinite loop)
 
 ## RandStringGenerator
 Generate random strings allowing repetition.
