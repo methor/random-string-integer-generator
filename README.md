@@ -1,5 +1,5 @@
 # Random-string-integer-generator
-Random string/integer generator without trial-and-error iterations.
+*Random string/integer generator without trial-and-error iterations.*
 
 ## RandUniqueStringGenerator
 Generate random unique strings using the Floyd algorithm(trial-and-error free).
