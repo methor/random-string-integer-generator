@@ -75,7 +75,7 @@ public final class RandUniqueStringGenerator {
             randString = stringModString(randString, inStringPlus1);
 
             if (stringSet.contains(randString))
-                randString = inString;
+                randString = inStringPlus1;
             stringSet.add(randString);
 
             im++;

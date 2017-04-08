@@ -7,6 +7,8 @@ import java.util.*;
  */
 public class RandIntegerGenerator {
 
+    private RandIntegerGenerator() {}
+
     public static List<Integer> generateUniqueIntegers(int num) {
         if (num <= 0)
             throw new IllegalArgumentException("num must be positive!");
@@ -59,8 +61,9 @@ public class RandIntegerGenerator {
         for (int i = 0; i < num; i++, ni++) {
             int r = random.nextInt(ni + 1 - base) + base;
             if (integerSet.contains(r))
-                r = ni;
-            integerSet.add(r+1);
+                r = ni + 1;
+            integerSet.add(r);
+
         }
 
         return new ArrayList<>(integerSet);
